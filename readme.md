@@ -76,8 +76,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Je opdracht:** <https://www.chocomel.nl/nl/l/geschiedenis/>
 
 **Screenshot(s) van de eerste pagina (small screen):**
-![geschiedenis](sc_herkomst_1.png)
-<img src="images/sc_herkomst_1.svg" width="375px" alt="Geschiedenis van chocomel">
+![chocomel geschiedenis] (https://github.com/julia-iz/markdown-here/raw/main/src/common/images/sc_herkomst_1.png "pagina 1")
+
 <img src="images/sc_herkomst_2.PNG" width="375px" alt="Geschiedenis van chocomel">
 
 **Screenshot(s) van de tweede pagina (small screen):**
