@@ -48,10 +48,10 @@ Ik ben te laat begonnen en niks ging goed. Ik weet niet goed waar ik moet beginn
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
+| Caro           | Anne-Fleur         | Hind         | Julia            |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| hamburger menu | ook hamburger      | hetzelfde    | hetzelfde        |
+| an dat ook nog | positioneren       | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
