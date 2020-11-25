@@ -38,11 +38,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik ben te laat begonnen en niks ging goed. Ik weet niet goed waar ik moet beginnen. Ik doe mn best om voor het gesprek nog wat meer af te hebben maar voor nu is het tijd om in te leveren.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/sc_tot_eerste_gesprek.png" width="400px" alt="hoe ver ik gekomen ben ">
 
 ### Agenda voor meeting
 
