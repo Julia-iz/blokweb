@@ -7,30 +7,69 @@ body{
     font-family: "open sans condensed", sans serif;
     margin:0
 }
+/*header*/
 header{
     display: flex;
     flex-wrap: wrap;
-}
-nav{
-    width: 100vw;
+    justify-content: space-between;
     background-color: #fdb03c;
+
+}
+/*menu*/
+header .hamburger button:first-of-type{
+    z-index: 200;
+    position: relative;
+}
+.hamburger {
+    order: -1;
 }
 
-nav ul{
+.hamburger ul{
+    position: fixed;
     margin: 0;
-    padding: 0;
-    display: flex;
-    align-content: flex-start;
+    padding: 2.5em 0 0;
 
+    top: 0; left: 0;
+    background-color: red;
+    width: 50%;
+    bottom:0;
+    z-index: 100;
+    transform:translateX(-100%);
+    transition: .3s;
 }
-nav ul li{
+.hamburger ul.open{
+    transform:translateX(0);
+}
+.hamburger ul li{
     list-style-type: none;
     align-content: space-around;
-    min-width: 2em;
+
+}
+
+.hamburger ul li a{
+    padding: 1em;
+    display: block;
 }
 
 
+.balk ul {
+    list-style: none;
+    display: flex;
+    padding:0; margin: 0;
+    background-color: white;
 
+}
 
-/*code over nav van https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f */
+.balk ul li {
 
+}
+
+.balk ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+section img{
+    width: 100%
+}
