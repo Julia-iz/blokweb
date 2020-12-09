@@ -30,7 +30,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik doe echt mijn best maar vaak weet ik niet goed welke code ik moet gebruiken, maar als het uitgelegd wordt vind ik het heel logisch. het gaat de goede kant op met mn website, er staat nu content in en mijn header is meer uitgebreid niet dat het er goed uit ziet, maar toch.
+
+**Screenshot(s):**
+
+<img src="images/sc_tweede_gesprek.PNG" width="400px" alt="hoe ver ik gekomen ben ">
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+| Caro           | Anne-Fleur         | Hind         | Julia            |
+| ---            | ---                | ---          | ---              |
+| nav positioneren |                  |              |tekst onder img in nav        |
+| sub menu's     |                    |              |                  |
+| ...            | ...                | ...          | ...              |
+
+### Verslag van meeting
+
+We hebben hamburger menu's besproken en ik heb nu een werkend hamburger menu in mijn website!
+
 
 
 
@@ -56,7 +77,7 @@ Ik ben te laat begonnen en niks ging goed. Ik weet niet goed waar ik moet beginn
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+We hebben hamburger menu's besproken en ik heb nu een werkend hamburger menu in mijn website!
 
 
 

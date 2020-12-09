@@ -11,14 +11,26 @@ body{
 header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #fdb03c;
-
+    padding: .5em 0 0 0;
 }
 /*menu*/
 header .hamburger button:first-of-type{
     z-index: 200;
     position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+.logo img{
+    width: 2em;
+    align-self: center;
+}
+
+.zoeken{
+    width: 1.5em;
+    align-self: center;
 }
 .hamburger {
     order: -1;
@@ -30,7 +42,7 @@ header .hamburger button:first-of-type{
     padding: 2.5em 0 0;
 
     top: 0; left: 0;
-    background-color: red;
+    background-color: #362112;
     width: 50%;
     bottom:0;
     z-index: 100;
@@ -49,25 +61,39 @@ header .hamburger button:first-of-type{
 .hamburger ul li a{
     padding: 1em;
     display: block;
+    text-decoration: none;
+    color: white;
 }
 
-
+.balk{
+    width: 100%
+}
 .balk ul {
     list-style: none;
     display: flex;
     padding:0; margin: 0;
     background-color: white;
-
+    justify-content: space-around;
 }
 
 .balk ul li {
+    padding:.5em ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+.balk ul li.first-of-type{
 
 }
-
 .balk ul li a{
     text-decoration: none;
     color: black;
 
+}
+
+.balk ul li a img{
+    width: 2em;
 }
 
 section img{
