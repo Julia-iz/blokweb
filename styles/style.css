@@ -15,7 +15,7 @@ header{
     background-color: #fdb03c;
     padding: .5em 0 0 0;
 }
-/*menu*/
+/*hamburger menu*/
 header .hamburger button:first-of-type{
     z-index: 200;
     position: relative;
@@ -65,8 +65,10 @@ header .hamburger button:first-of-type{
     color: white;
 }
 
+/*tweede nav*/
 .balk{
-    width: 100%
+    width: 100%;
+    box-shadow: 0 8px 10px -6px grey;
 }
 .balk ul {
     list-style: none;
@@ -81,6 +83,7 @@ header .hamburger button:first-of-type{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     font-size: 14px;
 }
 .balk ul li.first-of-type{
@@ -89,13 +92,28 @@ header .hamburger button:first-of-type{
 .balk ul li a{
     text-decoration: none;
     color: black;
-
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .balk ul li a img{
-    width: 2em;
+    width: 1.5em;
 }
 
+/*body*/
 section img{
     width: 100%
 }
+section article{
+    position:relative;
+}
+section article h1{
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    left: 1em;
+
+}
+

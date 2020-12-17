@@ -24,7 +24,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+screenreader:
+Ik snap helemaal niks van deze screen reader. Hij zegt constant dingen zoals “you’re currently on a tekst element inside a group” en dat sort dingen. Als ik een foto selecteer zegt hij “unlabled image”. Ik kan niet zorgen dat de screenreader iets voorleest door middel van mijn pijltjes te navigeren (Misschien snap ik gewoon niet hoe dit moet, maar hoe moeilijk kan het zijn?).
+Er staan veel woorden in capslock op de chocomel website, deze leest de screenreader letter voor letter voor. Ik zet nu snel deze screenreader uit want ik krijg er hoofdpijn van.
+De toegankelijkheid van de chocomel website is dus totaal niet goed! Er is veel wat ik eraan kan verbeteren.
+
+Deze week had ik het erg druk met design patterns en project web. Hierdoor ben ik opnieuw niet veel verder gekomen. Ik vind het nog steeds lastig, waardoor elk klein dingetje best lang duurt. In de kerstvakantie ga ik goed aan de slag want dan heb ik toch alle tijd!
 
 
 
@@ -52,7 +57,7 @@ Ik doe echt mijn best maar vaak weet ik niet goed welke code ik moet gebruiken, 
 
 We hebben hamburger menu's besproken en ik heb nu een werkend hamburger menu in mijn website!
 
-
+<img src="images/screenshot_voortgang6.png" width="400px" alt="hoe ver ik gekomen ben ">
 
 
 ## Voortgang 1 (week 3)
