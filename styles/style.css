@@ -5,13 +5,15 @@
 
 body{
     font-family: "open sans condensed", sans serif;
-    margin:0
+    margin:0;
+    width: 100%;
+    overflow: scroll;
 }
 /*header*/
 header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fdb03c;
     padding: .5em 0 0 0;
 }
@@ -28,9 +30,41 @@ header .hamburger button:first-of-type{
     align-self: center;
 }
 
-.zoeken{
-    width: 1.5em;
-    align-self: center;
+form input:first-of-type{
+    position: absolute;
+    border: 2px solid #362112;
+    border-radius: 15px;
+    height: 2em;width:2em;
+    padding: 5px;
+    color: #362112;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0;
+    right: .5em;
+    text-align: left;
+}
+form input:last-of-type{
+    width: 1.8em;
+    margin:.3em .5em .3em .3em;
+}
+
+form input:first-of-type:hover{
+    animation-name: zoekBalk;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    direction: rtl;
+}
+
+@keyframes zoekBalk{
+    0%{
+        width: 2em; height: 2em;
+        opacity: 0;
+    }
+    100%{
+        width: 20em; height: 3em;
+        opacity: 100%;
+    }
 }
 .hamburger {
     order: -1;
@@ -85,14 +119,16 @@ header .hamburger button:first-of-type{
     text-align: center;
     align-items: center;
     font-size: 14px;
+    align-self: flex-end;
 }
-.balk ul li.first-of-type{
 
-}
 .balk ul li a{
+    font-family: "raleway", sans-serif;
+    font-size: 12px;
+    font-weight:lighter;
     text-decoration: none;
     color: black;
-     display: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -103,17 +139,351 @@ header .hamburger button:first-of-type{
 }
 
 /*body*/
-section img{
-    width: 100%
+/*navigatie rechts (123)*/
+/*.geschiedenis geeft aan dat de css alleen voor de geschiedenis pagina geld*/
+
+.geschiedenis main ul{
+    list-style: none;
+    position: fixed;
+    background-color: #E6E1DC80;
+    z-index: 100;
+    right: 0;
+    padding: .2em;
+    border-radius: 30px 0 0 30px;
+    height: 12em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
-section article{
+
+.geschiedenis main ul li{
+    border: 2px solid #362112;
+    padding: .1em .6em;
+    margin: .5em;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.geschiedenis main ul li a{
+    text-decoration: none;
+    color: #362112;
+    font-family: "open sans condensed", sans serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.geschiedenis main ul li a:hover{
+    color: #fdb03c;
+}
+
+.geschiedenis main ul li:hover{
+    border-color: #fdb03c;
+}
+
+.geschiedenis .dots{
+    position: absolute;
+    height: 10em;
+    width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border: none ;
+    border-right: 2px #362112 dotted;
+    margin: 0; padding: .7em;
+    z-index: -1;
+    top: 15px
+}
+
+.geschiedenis section{
+    width: 100%;
+    overflow: hidden; /*zodat de plaatjes niet te groot overflowen*/
+}
+
+.geschiedenis section article{
     position:relative;
+    display: flex;
+    flex-direction: column;
 }
-section article h1{
+
+/*titel hoofdstuk*/
+.geschiedenis section article h1{
     color: white;
     position: absolute;
     text-transform: uppercase;
-    left: 1em;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    width: 60%;
+    margin: .5em 0; padding: 0;
+}
+
+.geschiedenis section article h2{
+    font-family: 'Dancing Script', cursive;
+    color: #fdb03c;
+    font-size: 1.5em;
+    margin: 0;
+    position: relative;
+    align-self: center;
+    top: 3em
+}
+.geschiedenis section:first-of-type article h2{
+    position: absolute;
+    top: 5em;
+}
+
+
+.geschiedenis section article h3{
+    color: #fdb03c;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 1.5em;
+    order: 3;
+}
+
+.geschiedenis section article p{
+    color: #948a86;
+    font-size: 16px;
+    margin:1em;
+    order:4;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+}
+
+/* tijdperk vormgeving*/
+.geschiedenis section article p:first-of-type{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    background-color: #fdb03c;
+    color: white;
+    padding: .5em;
+    align-items: center;
+    margin: 0;
+    order: 2;
+    width: 5em;
+    text-align: center;
+    align-self: center;
 
 }
 
+.geschiedenis section article img{
+    width: 50%;
+    order: 1;
+    align-self: center;
+    background-color: white;
+    margin: 3em 1em;
+}
+
+/*stipjes*/
+.geschiedenis section article hr{
+    position: absolute;
+    height: 3em;
+    border-left: dotted;
+    left: 50%;
+    top: 0%;
+    z-index: -1;
+    color: lightgray;
+}
+
+.geschiedenis section article hr:nth-of-type(2){
+    top: 33%;
+}
+
+/*sommige stippellijntjes stonden nog niet goed, dus stijl ik die individueel*/
+.geschiedenis section:first-of-type article:nth-of-type(3) hr:nth-of-type(2){
+    top: 35%;
+}
+
+.geschiedenis section:nth-of-type(2) article:nth-of-type(2) hr:nth-of-type(2){
+    top: 17%;
+}
+
+
+/*achtergrond foto*/
+.geschiedenis section article:first-of-type img{
+    width: 200%;
+    margin:0;
+}
+
+.geschiedenis section article button{
+    font-family: "Open Sans",sans-serif;
+    text-transform: uppercase;
+    background-color: #362112;
+    font-size: 16px;
+    border-color: transparent;
+    font-weight: 700;
+    order:5;
+    width: 14em;
+    padding: .5em 0;
+    border-radius: 30px;
+    align-self: center
+}
+
+.geschiedenis section article button a{
+    color: white;
+   text-decoration: none;
+}
+
+
+
+
+
+.geschiedenis section article button:focus{
+    border: 2px solid #fdb03c;
+}
+
+.geschiedenis section article button:hover{
+    background-color: #fdb03c;
+    width:15em;
+    animation-name: buttonGroter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.geschiedenis section article button:hover::after{
+    content: ">";
+    margin-left: .5em;
+    color: white;
+}
+
+@keyframes buttonGroter{
+    0%{
+        width: 14em;
+        background-color: #362112;
+    }
+    50%{
+        width:16em;
+        background-color: #fdb03c;
+        }
+    }
+    100%{
+        width: 15em;
+        background-color: #fdb03c;
+    }
+}
+
+
+
+
+/*css producten pagina*/
+.producten section{
+    display:flex;
+    flex-direction: column;
+
+}
+.producten section h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: #fdb03c;
+    margin:0; padding: .5em;
+    width: 100%;
+    text-align: center;
+}
+
+.producten section article {
+    display: flex;
+    flex-direction: column;
+    max-height: 20em
+}
+
+.producten section article img{
+    width: 8em;
+    align-self: center;
+    order:1;
+
+    position: relative;
+    top: 2em;
+    z-index: 100;
+}
+
+.producten section article h2{
+    color: white;
+    font-family: "raleway", sans serif;
+    font-size: 35px;
+    font-weight: 5000;
+    text-transform: uppercase;
+    margin: 0;
+
+    align-self: center;
+    max-width: 80%;
+    order: 2;
+    text-align: center;
+    z-index: 200;
+    position: relative;
+    bottom: 1em
+}
+
+.producten section article:first-of-type {
+    background-color: #206fee;
+    background-image: radial-gradient(#5fd6fc, #206fee );
+}
+
+.producten section article:hover img{
+    animation-name: groteChoco;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+.producten section article:focus{
+    border: 3px solid white;
+}
+.producten section article:nth-of-type(2){
+    background-color:#eba420;
+    background-image: radial-gradient(#ffd97d, #eba420);
+}
+
+.producten section article:nth-of-type(3){
+    background-color:#1c0c07;
+    background-image: radial-gradient(#79371d, #1c0c07);
+}
+
+.producten section article:nth-of-type(4){
+    background-color:#206fee;
+    background-image: radial-gradient(#5fd6fc, #206fee );
+}
+
+.producten section article:nth-of-type(5){
+    background-color:#eba420;
+    background-image: radial-gradient(#ffd97d, #eba420);
+}
+
+.producten section article:nth-of-type(6){
+    background-color:#1c0c07;
+    background-image: radial-gradient(#79371d, #1c0c07);
+}
+
+@keyframes groteChoco{
+    0%{
+        width: 8em;
+    }
+    100%{
+        width: 9em;
+    }
+}
+/*footer*/
+footer section:first-of-type{
+    background-color: #362112;
+    padding: 1em
+}
+footer section:last-of-type{
+    background-color: #FDB03C;
+    padding: 1em
+}
+
+footer section ul{
+    list-style: none;
+}
+
+footer section ul li{
+    color: white;
+    font:16px "open sans light", "sans serif";
+    text-transform: capitalize;
+    padding: 2px; margin: 3px
+}
+
+footer ul li:first-of-type{
+    font:20px "open sans condensed", "sans serif";
+    font-weight: bold;
+}

@@ -7,3 +7,4 @@ function openMenu(){
     var hetMenu = document.querySelector("header nav ul");
     hetMenu.classList.toggle("open");
 }
+
